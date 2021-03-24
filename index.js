@@ -1,4 +1,4 @@
-import rainbowPaint from "./rainbow-elements.js";
+import RainbowElements from "./rainbow-elements.js";
 
 const exampleDoms = document.querySelectorAll(".example");
 Array.from(exampleDoms).forEach((exampleDom) => {
@@ -8,4 +8,12 @@ Array.from(exampleDoms).forEach((exampleDom) => {
     });
 });
 
-rainbowPaint();
+const runButton = document.querySelector("#run");
+runButton.addEventListener("click", () => {
+    RainbowElements.paint();
+});
+
+const stopButton = document.querySelector("#stop");
+stopButton.addEventListener("click", () => {
+    RainbowElements.clear();
+});
