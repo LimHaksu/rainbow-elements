@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "commonjs",
+        "target": "es5",
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "noImplicitThis": false,
+        "sourceMap": false,
+        "outDir": "dist",
+        "noEmitOnError": true,
+        "typeRoots": ["node_modules/@types"],
+        "baseUrl": ".",
+        "paths": {
+            "*": ["*"]
+        },
+        "allowJs": true,
+        "declaration": true
+    }
+}
