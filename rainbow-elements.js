@@ -11,14 +11,14 @@ RainbowElements.prototype.paint = function () {
     const targetDoms = document.querySelectorAll(".rainbow-elements");
     targetDoms.forEach((targetDom) => {
         const type = targetDom.dataset.type;
-        const saturation = targetDom.dataset.saturation || "100%";
-        const lightness = targetDom.dataset.lightness || "50%";
+        const saturation = targetDom.dataset.saturation || "1";
+        const lightness = targetDom.dataset.lightness || "0.5";
         const alpha = targetDom.dataset.alpha || "1";
         const numOfElements = targetDom.children.length;
         Array.from(targetDom.children).forEach((childDom, index) => {
-            const hsla = `hsla(${
-                index === 0 ? 0 : (maxHue / (numOfElements - 1)) * index
-            }, ${saturation}, ${lightness}, ${alpha})`;
+            const hsla = `hsla(${index === 0 ? 0 : (maxHue / (numOfElements - 1)) * index}, ${
+                parseFloat(saturation) * 100 + "%"
+            }, ${parseFloat(lightness) * 100 + "%"}, ${alpha})`;
             switch (type) {
                 case "background":
                     childDom.style.backgroundColor = hsla;
