@@ -1,5 +1,4 @@
-import RainbowElements from "./rainbow-elements.js";
-
+const { re } = window.RainbowElements;
 const exampleDoms = document.querySelectorAll(".example");
 Array.from(exampleDoms).forEach((exampleDom) => {
     exampleDom.style.display = "flex";
@@ -10,10 +9,10 @@ Array.from(exampleDoms).forEach((exampleDom) => {
 
 const runButton = document.querySelector("#run");
 runButton.addEventListener("click", () => {
-    RainbowElements.paint();
+    re.paint();
 });
 
 const stopButton = document.querySelector("#stop");
 stopButton.addEventListener("click", () => {
-    RainbowElements.clear();
+    re.clear();
 });

@@ -6,7 +6,7 @@ class RainbowElements {
         this.observer = new MutationObserver(this.paint);
     }
     paint() {
-        const maxHue = 280;
+        const maxHue = 270;
         const targetDoms = document.querySelectorAll<HTMLElement>(".rainbow-elements");
         targetDoms.forEach((targetDom) => {
             const type = targetDom.dataset.type;
@@ -63,4 +63,5 @@ class RainbowElements {
     }
 }
 
-export default new RainbowElements();
+const re = new RainbowElements();
+export { re };

@@ -37,16 +37,40 @@ Add `class="rainbow-elements"` attribute to the wrapper DOM
 </div>
 ```
 
-  
-
 Import `rainbow-elements` and execute `run()` method
 
 ```js
-import RainbowElements from 'rainbow-elements'
-RainbowElements.run()
+import { re } from 'rainbow-elements'
+re.run()
 ```
 
 Then, the div elements inside the wrapper div colored rainbow.  
+
+  
+
+#### UMD
+
+```html
+<body>
+    <div class="rainbow-elements" data-type="background">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+        <div> 4 </div>
+        <div> 5 </div>
+        <div> 6 </div>
+        <div> 7 </div>
+	</div>
+</body>
+<script src="https://unpkg.com/rainbow-elements@latest/dist/rainbow-elements.js"></script>
+```
+
+```js
+const { re } = window.RainbowElements
+re.run()
+```
+
+  
 
   
 
@@ -72,10 +96,10 @@ This library changes [hsla](https://developer.mozilla.org/en-US/docs/Web/CSS/col
 | attribute       | value or range                    | default value | type   | description                                                  |
 | --------------- | --------------------------------- | ------------- | ------ | ------------------------------------------------------------ |
 | class           | "rainbow-elements"                | `none`        | string | The class of the wrapper dom should be named "rainbow-elements" for the library to detect the dom. |
-| data-type       | "color"  \| "background" \| "svg" | "color"       | string | "color" changes the element.style.color<br />"background" changes the element.style.backgroundColor<br />"svg" changes the element.style.fill |
-| data-saturation | "0" ~ "1" (float)                 | "1"           | string | "0" means "0%" of the saturation and <br />"1" means "100%" of that. |
-| data-lightness  | "0" ~ "1" (float)                 | "0.5"         | string | "0" means "0%" of the lightness and <br />"1" means "100%" of that. |
-| data-alpha      | "0" ~ "1" (float)                 | "1"           | string | It is just alpha value                                       |
+| data-type       | "color"  \| "background" \| "svg" | "color"       | string | (optional)<br />"color" changes the element.style.color<br />"background" changes the element.style.backgroundColor<br />"svg" changes the element.style.fill |
+| data-saturation | "0" ~ "1" (float)                 | "1"           | string | (optional)<br />"0" means "0%" of the saturation and <br />"1" means "100%" of that. |
+| data-lightness  | "0" ~ "1" (float)                 | "0.5"         | string | (optional)<br />"0" means "0%" of the lightness and <br />"1" means "100%" of that. |
+| data-alpha      | "0" ~ "1" (float)                 | "1"           | string | (optional) It is just alpha value                            |
 
 
 
