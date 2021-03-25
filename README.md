@@ -2,7 +2,7 @@
 
   
 
-![RainbowElements](https://user-images.githubusercontent.com/32071079/112424312-8829d680-8d77-11eb-8ebf-5b792c9a5d37.png)
+![RainbowElements](https://user-images.githubusercontent.com/32071079/112425531-95e05b80-8d79-11eb-8093-8c3a5c53ece8.png)
 
   
 
