@@ -88,7 +88,7 @@ re.run()
 | run()   | `none`    | execute paint() and subscribe paint() method to the mutation observer |
 | stop()  | `none`    | execute clear() and unsubscribe paint() method               |
 
-It is enough to call the run() or stop() function once, other pages are automatically painted in rainbow colors.  
+If you use this library in SPA, It is enough to call the run() or stop() method once in root file. Elements in all pages are automatically painted in rainbow colors.
 
 run() and stop() methods use the [mutation observer](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver). you need to check out the [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver#browser_compatibility).
 
