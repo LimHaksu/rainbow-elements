@@ -31,7 +31,7 @@ This library paints the children of the dom with rainbow colors, so wrapper dom 
 Add `class="rainbow-elements"` attribute to the wrapper DOM
 
 ```html
-<div class="rainbow-elements" data-type="background">
+<div class="rainbow-elements" data-re-type="background">
     <div> 1 </div>
     <div> 2 </div>
     <div> 3 </div>
@@ -57,7 +57,7 @@ Then, the div elements inside the wrapper div colored rainbow.
 
 ```html
 <body>
-    <div class="rainbow-elements" data-type="background">
+    <div class="rainbow-elements" data-re-type="background">
         <div> 1 </div>
         <div> 2 </div>
         <div> 3 </div>
@@ -96,15 +96,15 @@ run() and stop() methods use the [mutation observer](https://developer.mozilla.o
 
 ## Attributes
 
-This library changes [hsla](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#fully_saturated_colors) values of the elements.
+This library changes [hsla](https://www.w3.org/wiki/CSS/Properties/color/HSLA) values of the elements.
 
-| attribute       | value or range                    | default value | type   | description                                                  |
-| --------------- | --------------------------------- | ------------- | ------ | ------------------------------------------------------------ |
-| class           | "rainbow-elements"                | `none`        | string | The class of the wrapper dom should be named "rainbow-elements" for the library to detect the dom. |
-| data-type       | "color"  \| "background" \| "svg" | "color"       | string | (optional)<br />"color" changes the element.style.color<br />"background" changes the element.style.backgroundColor<br />"svg" changes the element.style.fill |
-| data-saturation | "0" ~ "1" (float)                 | "1"           | string | (optional)<br />"0" means "0%" of the saturation and <br />"1" means "100%" of that. |
-| data-lightness  | "0" ~ "1" (float)                 | "0.5"         | string | (optional)<br />"0" means "0%" of the lightness and <br />"1" means "100%" of that. |
-| data-alpha      | "0" ~ "1" (float)                 | "1"           | string | (optional) It is just alpha value                            |
+| attribute          | value or range                    | default value | type   | description                                                  |
+| ------------------ | --------------------------------- | ------------- | ------ | ------------------------------------------------------------ |
+| class              | "rainbow-elements"                | `none`        | string | The class of the wrapper dom should be named "rainbow-elements" for the library to detect the dom. |
+| data-re-type       | "color"  \| "background" \| "svg" | "color"       | string | (optional)<br />"color" changes the element.style.color<br />"background" changes the element.style.backgroundColor<br />"svg" changes the element.style.fill |
+| data-re-saturation | "0" ~ "1" (float)                 | "1"           | string | (optional)<br />"0" means "0%" of the saturation and <br />"1" means "100%" of that. |
+| data-re-lightness  | "0" ~ "1" (float)                 | "0.5"         | string | (optional)<br />"0" means "0%" of the lightness and <br />"1" means "100%" of that. |
+| data-re-alpha      | "0" ~ "1" (float)                 | "1"           | string | (optional) It is just alpha value                            |
 
 
 

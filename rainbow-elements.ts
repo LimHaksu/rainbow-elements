@@ -9,10 +9,10 @@ class RainbowElements {
         const maxHue = 270;
         const targetDoms = document.querySelectorAll<HTMLElement>(".rainbow-elements");
         targetDoms.forEach((targetDom) => {
-            const type = targetDom.dataset.type;
-            const saturation = targetDom.dataset.saturation || "1";
-            const lightness = targetDom.dataset.lightness || "0.5";
-            const alpha = targetDom.dataset.alpha || "1";
+            const type = targetDom.dataset.reType;
+            const saturation = targetDom.dataset.reSaturation || "1";
+            const lightness = targetDom.dataset.reLightness || "0.5";
+            const alpha = targetDom.dataset.reAlpha || "1";
             const numOfElements = targetDom.children.length;
             for (let index = 0; index < targetDom.children.length; ++index) {
                 const childDom = targetDom.children[index] as HTMLElement;
@@ -36,7 +36,7 @@ class RainbowElements {
     clear() {
         const targetDoms = document.querySelectorAll<HTMLElement>(".rainbow-elements");
         targetDoms.forEach((targetDom) => {
-            const type = targetDom.dataset.type;
+            const type = targetDom.dataset.reType;
             for (let i = 0; i < targetDom.children.length; ++i) {
                 const childDom = targetDom.children[i] as HTMLElement;
                 switch (type) {
