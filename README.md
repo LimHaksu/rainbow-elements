@@ -118,6 +118,8 @@ This library changes [hsla](https://www.w3.org/wiki/CSS/Properties/color/HSLA) v
 
 ### with D3.js
 
-[Bar chart ( link )](https://codesandbox.io/s/compassionate-cartwright-zybb0?file=/src/index.js)
+[Bar chart](https://codesandbox.io/s/compassionate-cartwright-zybb0?file=/src/index.js)
 
-[Line chart ( link )](https://codesandbox.io/s/rainbow-elements-d3-line-chart-example-q9owt?file=/src/index.js)
+[Line chart](https://codesandbox.io/s/rainbow-elements-with-d3-line-chart-example2-2ssu0?file=/src/index.js)
+
+[Multi-line chart](https://codesandbox.io/s/rainbow-elements-d3-line-chart-example-q9owt?file=/src/index.js)
