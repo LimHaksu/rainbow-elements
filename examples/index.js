@@ -1,4 +1,5 @@
 const { re } = window.RainbowElements;
+re.run();
 const exampleDoms = document.querySelectorAll(".example");
 Array.from(exampleDoms).forEach((exampleDom) => {
     exampleDom.style.display = "flex";

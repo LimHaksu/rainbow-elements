@@ -53,7 +53,7 @@ Then, the div elements inside the wrapper div colored rainbow.
 
   
 
-#### UMD
+#### UMD ( CDN )
 
 ```html
 <body>
@@ -98,13 +98,15 @@ run() and stop() methods use the [mutation observer](https://developer.mozilla.o
 
 This library changes [hsla](https://www.w3.org/wiki/CSS/Properties/color/HSLA) values of the elements.
 
-| attribute          | value or range                    | default value | type   | description                                                  |
-| ------------------ | --------------------------------- | ------------- | ------ | ------------------------------------------------------------ |
-| class              | "rainbow-elements"                | `none`        | string | The class of the wrapper dom should be named "rainbow-elements" for the library to detect the dom. |
-| data-re-type       | "color"  \| "background" \| "svg" | "color"       | string | (optional)<br />"color" changes the element.style.color<br />"background" changes the element.style.backgroundColor<br />"svg" changes the element.style.fill |
-| data-re-saturation | "0" ~ "1" (float)                 | "1"           | string | (optional)<br />"0" means "0%" of the saturation and <br />"1" means "100%" of that. |
-| data-re-lightness  | "0" ~ "1" (float)                 | "0.5"         | string | (optional)<br />"0" means "0%" of the lightness and <br />"1" means "100%" of that. |
-| data-re-alpha      | "0" ~ "1" (float)                 | "1"           | string | (optional) It is just alpha value                            |
+**<span style="color:#ee0000; background-color:#eee">※ re-type "background" and "svg" are deprecated.<br />They are replaced with "backgroundColor", "fill" and "stroke".</span>**
+
+| attribute          | value or range                                               | default value | type   | description                                                  |
+| ------------------ | ------------------------------------------------------------ | ------------- | ------ | ------------------------------------------------------------ |
+| class              | "rainbow-elements"                                           | `none`        | string | The class of the wrapper dom should be named "rainbow-elements" for the library to detect the dom. |
+| data-re-type       | "color"\|<br />"backgroundColor"\|<br />"fill"\|<br />"stroke" | "color"       | string | (optional)<br /> [`re-type`] changes the element.style[`re-type`] |
+| data-re-saturation | "0" ~ "1" (float)                                            | "1"           | string | (optional)<br />"0" means "0%" of the saturation and <br />"1" means "100%" of that. |
+| data-re-lightness  | "0" ~ "1" (float)                                            | "0.5"         | string | (optional)<br />"0" means "0%" of the lightness and <br />"1" means "100%" of that. |
+| data-re-alpha      | "0" ~ "1" (float)                                            | "1"           | string | (optional) It is just alpha value                            |
 
 
 
@@ -112,10 +114,10 @@ This library changes [hsla](https://www.w3.org/wiki/CSS/Properties/color/HSLA) v
 
 ### with React
 
-to be updated...
+[link](https://codesandbox.io/s/rainbow-elements-with-react-example-1lb2n?file=/package.json)  
 
-  
+### with D3.js
 
-### with D3
+[Bar chart ( link )](https://codesandbox.io/s/compassionate-cartwright-zybb0?file=/src/index.js)
 
-to be updated...
+[Line chart ( link )](https://codesandbox.io/s/rainbow-elements-d3-line-chart-example-q9owt?file=/src/index.js)

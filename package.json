@@ -1,6 +1,6 @@
 {
     "name": "rainbow-elements",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "Simple library that paints HTML elements in rainbow colors",
     "keywords": [
         "color",
