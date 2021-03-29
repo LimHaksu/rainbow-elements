@@ -4,6 +4,11 @@ type ReType = typeof ReType[number];
 const isReType = (type: string): type is ReType => {
     return ReType.indexOf(type as any) !== -1;
 };
+
+const errorMessage = (type: string) => {
+    return `re-type error : "${type}" is not in re-type (${ReType.map((t) => `"${t}"`).join(" | ")})`;
+};
+
 class RainbowElements {
     config: { attributes: boolean; childList: boolean; subtree: boolean };
     observer;
@@ -28,7 +33,7 @@ class RainbowElements {
                 if (isReType(type)) {
                     childDom.style[type] = hsla;
                 } else {
-                    throw new Error(`re-type error : "${type}" is not in re-type`);
+                    throw new Error(errorMessage(type));
                 }
             }
         });
@@ -42,7 +47,7 @@ class RainbowElements {
                 if (isReType(type)) {
                     childDom.style[type] = "";
                 } else {
-                    throw new Error(`re-type error : "${type}" is not in re-type`);
+                    throw new Error(errorMessage(type));
                 }
             }
         });
