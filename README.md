@@ -20,7 +20,7 @@ yarn add rainbow-elements
 
 This library paints the children of the dom with rainbow colors, so wrapper dom is needed.
 
-### basic
+### ES module
 
 Add `class="rainbow-elements"` attribute to the wrapper DOM
 
